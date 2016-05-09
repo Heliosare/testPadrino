@@ -7,8 +7,6 @@ module JobVacancy
     sprockets
 
     enable :sessions
-    register PadrinoFields
 
-# set :default_builder, 'PadrinoFieldsBuilder'
   end
 end
