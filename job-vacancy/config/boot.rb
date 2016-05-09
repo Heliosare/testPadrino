@@ -6,6 +6,10 @@ PADRINO_ROOT = File.expand_path('../..', __FILE__) unless defined?(PADRINO_ROOT)
 require 'bundler/setup'
 Bundler.require(:default, RACK_ENV)
 
+Padrino.before_load do
+  I18n.locale = :fr
+end
+
 ##
 # ## Enable devel logging
 #
@@ -18,7 +22,7 @@ Bundler.require(:default, RACK_ENV)
 #
 # ## Configure your I18n
 #
-# I18n.default_locale = :en
+I18n.default_locale = :fr
 # I18n.enforce_available_locales = false
 #
 # ## Configure your HTML5 data helpers
