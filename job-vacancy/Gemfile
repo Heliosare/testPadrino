@@ -29,13 +29,13 @@ gem 'yui-compressor', '0.9.6'
 # Padrino Stable Gem
 gem 'padrino', '0.13.1'
 
-  # gem "padrino-fields"
-  #
-# group :test do
-#   gem 'rspec' , '2.13.0'
-#   gem 'factory_girl', '4.2.0'
-#   gem 'rack-test', '0.6.2', :require => 'rack/test'
-# end
+# gem "padrino-fields"
+#
+group :test do
+  gem 'rspec' , '2.13.0'
+  gem 'factory_girl', '4.2.0'
+  gem 'rack-test', '0.6.2', :require => 'rack/test'
+end
 
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'

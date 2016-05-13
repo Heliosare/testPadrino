@@ -13,26 +13,9 @@ JobVacancy::App.controllers :page do
   end
 
   get :home, :map => '/' do
-    render :erb, 'home'
+     @user = User.new
+     render :erb, 'home'
   end
-  # get :index, :map => '/foo/bar' do
-  #   session[:foo] = 'bar'
-  #   render 'index'
-  # end
-
-  # get :sample, :map => '/sample/url', :provides => [:any, :js] do
-  #   case content_type
-  #     when :js then ...
-  #     else ...
-  # end
-
-  # get :foo, :with => :id do
-  #   "Maps to url '/foo/#{params[:id]}'"
-  # end
-
-  # get '/example' do
-  #   'Hello world!'
-  # end
 
 
 end
